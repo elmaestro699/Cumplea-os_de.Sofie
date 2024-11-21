@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angie's Birthday Game</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #fef6e4;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+        }
+        #jump-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ff6b6b;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        #jump-button:active {
+            background-color: #ff4a4a;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <button id="jump-button">Jump</button>
+    <script src="game.js"></script>
+</body>
+</html>
